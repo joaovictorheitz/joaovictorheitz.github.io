@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(13.98deg, #52e5e7 -231.03%, #130cb7 257.89%);
+}
+header nav {
+  height: 100%;
+  margin-right: 7.5rem;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+}
+header nav ul li {
+  font-family: "Poppins";
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: #fafafa;
+}
+
+body #container #background {
+  width: 95%;
+  height: 550px;
+  margin: 2rem;
+  margin-top: 3rem;
+  background: linear-gradient(322.87deg, #52e5e7 -13.69%, #130cb7 90.12%);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #container #background #info {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 60%;
+}
+body #container #background #info img {
+  border-radius: 175px;
+}
+body #container #background #info #info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+body #container #background #info #info-text #basic-infos {
+  margin-top: 4rem;
+}
+body #container #background #info #info-text #basic-infos h1 {
+  font-family: "Poppins";
+  text-align: center;
+  color: #fafafa;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+body #container #background #info #info-text #basic-infos h2 {
+  font-family: "Poppins";
+  text-align: center;
+  color: #fafafa;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+body #container #background #info #info-text #buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+body #container #background #info #info-text #buttons button {
+  font-family: "Poppins";
+  font-weight: 500;
+  background: #d9d9d9;
+  border-radius: 100px;
+  height: 2rem;
+  width: 8rem;
+}
+body #container-2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+body #container-2 #background {
+  display: flex;
+  width: 85%;
+  height: 400px;
+  box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.2);
+}
+body #container-2 #background #side-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body #container-2 #background #side-1 h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+}
+body #container-2 #background #side-1 p {
+  font-family: "Poppins";
+  font-weight: 500;
+  margin: 3rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+body #container-2 #background #side-2 {
+  font-family: "Poppins";
+  font-weight: 700;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body #container-2 #background #side-2 h1 {
+  text-align: center;
+  color: black;
+  width: 100%;
+  margin-top: 3rem;
+}
+body #container-2 #background #side-2 .row {
+  display: flex;
+  flex-direction: row;
+}
+body #container-2 #background #side-2 .row .answer {
+  width: 100%;
+  text-align: center;
+}
+body #container-3 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  align-items: center;
+}
+body #container-3 h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  text-align: center;
+  margin: 1.5rem;
+}
+body #container-3 #background {
+  display: flex;
+  width: 85%;
+  height: 400px;
+  box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.2);
+}
+body #container-3 #background #side-1, body #container-3 #background #side-2 {
+  font-family: "Poppins";
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #container-3 #background #side-1 #container, body #container-3 #background #side-2 #container {
+  width: 90%;
+  margin: 0.8rem;
+}
+body #container-3 #background #side-1 #container .row-div, body #container-3 #background #side-2 #container .row-div {
+  display: flex;
+  justify-content: space-between;
+}
+body #container-3 #background #side-1 #container progress, body #container-3 #background #side-2 #container progress {
+  width: 100%;
+}
+body #container-3 #background #side-2 {
+  justify-content: flex-start;
+}/*# sourceMappingURL=style.css.map */
