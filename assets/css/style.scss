@@ -7,12 +7,12 @@
 }
 
 @mixin poppinsMedium() {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 500;
 }
 
 @mixin poppinsBold() {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 700;
 }
 
@@ -23,7 +23,7 @@
     box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-@mixin bar_cursos () {
+@mixin bar_cursos() {
     #container {
         width: 80%;
         display: flex;
@@ -32,7 +32,7 @@
         #bar {
             height: 65px;
             width: 93%;
-            background-color: #D9D9D9;
+            background-color: #d9d9d9;
 
             #curso {
                 margin: 0.8rem;
@@ -44,8 +44,8 @@
 
                 #sub-title {
                     @include poppinsMedium();
-                    font-size:smaller;
-                    color: #4B4B4B;
+                    font-size: smaller;
+                    color: #4b4b4b;
                 }
             }
         }
@@ -53,7 +53,13 @@
         #blue-cube {
             height: 65px;
             width: 65px;
-            background-color: #0066FF;
+            background-color: #0066ff;
+        }
+
+        div#blue-cube.certified:hover {
+            background-color: #0043a9;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            transition: 300ms;
         }
     }
 }
@@ -63,13 +69,19 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 header {
+    opacity: 0;
     position: fixed;
     top: 0;
     display: flex;
@@ -77,6 +89,8 @@ header {
     width: 100%;
     height: 4rem;
     background: linear-gradient(13.98deg, #52e5e7 -231.03%, #130cb7 257.89%);
+    transition: opacity 2s;
+    z-index: 2;
 
     nav {
         height: 100%;
@@ -93,7 +107,11 @@ header {
                 align-items: center;
                 margin: 2rem;
                 font-size: 1.2rem;
-                color: #fafafa;
+
+                a {
+                    text-decoration: none;
+                    color: #fafafa;
+                }
             }
         }
     }
@@ -123,6 +141,11 @@ body {
                     border-radius: 175px;
                 }
 
+                img:hover {
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    transition: filter 300ms;
+                }
+
                 #info-text {
                     display: flex;
                     flex-direction: column;
@@ -136,6 +159,7 @@ body {
                         h1 {
                             @include texts();
                             @include poppinsBold();
+                            transition-delay: 1s;
                         }
 
                         h2 {
@@ -156,6 +180,16 @@ body {
                             border-radius: 100px;
                             height: 2rem;
                             width: 8rem;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            transition: filter 300ms;
+                        }
+
+                        a {
+                            color: black;
                         }
                     }
                 }
@@ -177,11 +211,11 @@ body {
                 justify-content: space-around;
                 align-items: center;
                 width: 50%;
-                
+
                 h1 {
                     @include poppinsBold();
                     text-align: center;
-                    color:black;
+                    color: black;
                     margin-top: 4rem;
                 }
 
@@ -202,7 +236,7 @@ body {
 
                 h1 {
                     text-align: center;
-                    color:black;
+                    color: black;
                     width: 100%;
                     margin-top: 3rem;
                 }
@@ -234,16 +268,17 @@ body {
             margin: 1.5rem;
         }
 
-        #background { 
+        #background {
             @include defaultBackground();
 
-            #side-1, #side-2 {
+            #side-1,
+            #side-2 {
                 @include poppinsMedium();
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                
+
                 #container {
                     width: 90%;
                     margin: 0.8rem;
@@ -262,7 +297,6 @@ body {
             #side-2 {
                 justify-content: flex-start;
             }
-
         }
     }
 
@@ -285,11 +319,11 @@ body {
             align-items: center;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);;
+            background: linear-gradient(135deg, #92ffc0 0%, #002661 100%);
 
             #left-side {
                 height: 100%;
-                width: calc(100%/3);
+                width: calc(100% / 3);
                 display: flex;
                 align-items: center;
                 flex-direction: row-reverse;
@@ -308,17 +342,19 @@ body {
 
             #mid {
                 height: 100%;
-                
+                display: flex;
+
                 img {
                     height: 100%;
                     max-height: 300px;
                     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    z-index: 1;
                 }
             }
 
             #right-side {
                 height: 100%;
-                width: calc(100%/3);
+                width: calc(100% / 3);
                 display: flex;
                 align-items: center;
 
@@ -348,7 +384,7 @@ body {
         width: 100%;
         align-items: center;
         margin-top: 4rem;
-        
+
         h1 {
             @include poppinsBold();
             text-align: center;
@@ -395,7 +431,7 @@ body {
             text-align: center;
             margin: 1rem;
         }
-        
+
         @include bar_cursos();
     }
 }

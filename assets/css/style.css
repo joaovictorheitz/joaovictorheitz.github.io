@@ -4,13 +4,19 @@
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 header {
+  opacity: 0;
   position: fixed;
   top: 0;
   display: flex;
@@ -18,6 +24,8 @@ header {
   width: 100%;
   height: 4rem;
   background: linear-gradient(13.98deg, #52e5e7 -231.03%, #130cb7 257.89%);
+  transition: opacity 2s;
+  z-index: 2;
 }
 header nav {
   height: 100%;
@@ -35,6 +43,9 @@ header nav ul li {
   align-items: center;
   margin: 2rem;
   font-size: 1.2rem;
+}
+header nav ul li a {
+  text-decoration: none;
   color: #fafafa;
 }
 
@@ -58,6 +69,10 @@ body #container #background #info {
 body #container #background #info img {
   border-radius: 175px;
 }
+body #container #background #info img:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: filter 300ms;
+}
 body #container #background #info #info-text {
   display: flex;
   flex-direction: column;
@@ -74,6 +89,7 @@ body #container #background #info #info-text #basic-infos h1 {
   color: #fafafa;
   font-family: "Poppins";
   font-weight: 700;
+  transition-delay: 1s;
 }
 body #container #background #info #info-text #basic-infos h2 {
   font-family: "Poppins";
@@ -95,6 +111,14 @@ body #container #background #info #info-text #buttons button {
   border-radius: 100px;
   height: 2rem;
   width: 8rem;
+  cursor: pointer;
+}
+body #container #background #info #info-text #buttons button:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: filter 300ms;
+}
+body #container #background #info #info-text #buttons a {
+  color: black;
 }
 body #container-2 {
   display: flex;
@@ -170,7 +194,8 @@ body #container-3 #background {
   height: 400px;
   box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.2);
 }
-body #container-3 #background #side-1, body #container-3 #background #side-2 {
+body #container-3 #background #side-1,
+body #container-3 #background #side-2 {
   font-family: "Poppins";
   font-weight: 500;
   width: 50%;
@@ -178,15 +203,18 @@ body #container-3 #background #side-1, body #container-3 #background #side-2 {
   flex-direction: column;
   justify-content: space-between;
 }
-body #container-3 #background #side-1 #container, body #container-3 #background #side-2 #container {
+body #container-3 #background #side-1 #container,
+body #container-3 #background #side-2 #container {
   width: 90%;
   margin: 0.8rem;
 }
-body #container-3 #background #side-1 #container .row-div, body #container-3 #background #side-2 #container .row-div {
+body #container-3 #background #side-1 #container .row-div,
+body #container-3 #background #side-2 #container .row-div {
   display: flex;
   justify-content: space-between;
 }
-body #container-3 #background #side-1 #container progress, body #container-3 #background #side-2 #container progress {
+body #container-3 #background #side-1 #container progress,
+body #container-3 #background #side-2 #container progress {
   width: 100%;
 }
 body #container-3 #background #side-2 {
@@ -213,7 +241,7 @@ body #container-4 #container {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #92FFC0 0%, #002661 100%);
+  background: linear-gradient(135deg, #92ffc0 0%, #002661 100%);
 }
 body #container-4 #container #left-side {
   height: 100%;
@@ -233,11 +261,13 @@ body #container-4 #container #left-side .arrow:hover {
 }
 body #container-4 #container #mid {
   height: 100%;
+  display: flex;
 }
 body #container-4 #container #mid img {
   height: 100%;
   max-height: 300px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
 }
 body #container-4 #container #right-side {
   height: 100%;
@@ -304,7 +334,7 @@ body #container-6 #container {
 body #container-6 #container #bar {
   height: 65px;
   width: 93%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 body #container-6 #container #bar #curso {
   margin: 0.8rem;
@@ -318,12 +348,17 @@ body #container-6 #container #bar #curso #sub-title {
   font-family: "Poppins";
   font-weight: 500;
   font-size: smaller;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 body #container-6 #container #blue-cube {
   height: 65px;
   width: 65px;
-  background-color: #0066FF;
+  background-color: #0066ff;
+}
+body #container-6 #container div#blue-cube.certified:hover {
+  background-color: #0043a9;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 300ms;
 }
 body #container-7 {
   width: 100%;
@@ -345,7 +380,7 @@ body #container-7 #container {
 body #container-7 #container #bar {
   height: 65px;
   width: 93%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 body #container-7 #container #bar #curso {
   margin: 0.8rem;
@@ -359,10 +394,15 @@ body #container-7 #container #bar #curso #sub-title {
   font-family: "Poppins";
   font-weight: 500;
   font-size: smaller;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 body #container-7 #container #blue-cube {
   height: 65px;
   width: 65px;
-  background-color: #0066FF;
+  background-color: #0066ff;
+}
+body #container-7 #container div#blue-cube.certified:hover {
+  background-color: #0043a9;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 300ms;
 }/*# sourceMappingURL=style.css.map */

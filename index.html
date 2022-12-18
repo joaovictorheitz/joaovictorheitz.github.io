@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/hide_header.js"></script>
     <script defer src="assets/js/carrousel.js"></script>
+    <script defer src="assets/js/buttons.js"></script>
     <title>João Victor Guedes</title>
 </head>
 
@@ -15,10 +16,10 @@
     <header>
         <nav>
             <ul>
-                <li>Sobre</li>
-                <li>Habilidades</li>
-                <li>Experiência</li>
-                <li>Contato</li>
+                <li id="about-button"><a href="#side-1">Sobre</a></li>
+                <li><a href="#prof-skills">Habilidades</a></li>
+                <li><a href="#container-5">Experiência</a></li>
+                <li id="contact-button"><a href="#container-2">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +34,8 @@
                         <h2>Desenvolvedor de Software</h2>
                     </div>
                     <div id="buttons">
-                        <button>Meus Contatos</button>
-                        <button>Baixar CV</button>
+                        <button><a href="#container-2">Meus Contatos</a></button>
+                        <button><a href= "assets/cv/" download="cv-joao-victor-guedes.pdf">Baixar CV</a></button>
                     </div>
                 </div>
             </div>
@@ -44,11 +45,11 @@
     <div id="container-2">
         <div id="background">
             <div id="side-1">
-                <h1>Sobre mim</h1>
+                <h1 id="about-me-info">Sobre mim</h1>
                 <p>Formado no ensino médio integrado ao curso técnico de Desenvolvimento de Sistemas na ETEC, adquiri conhecimentos em HTML, CSS, JS, NodeJS, C++, VB, Python, MySQL, PHP entre outros. Busco a oportunidade de usar os conhecimentos que adquiri, oferecer o melhor atendimento para os clientes e me desenvolver profissionalmente.</p>
             </div>
             <div id="side-2">
-                <h1>Informações Básicas</h1>
+                <h1 id="contact-h1">Informações Básicas</h1>
                 <div class="row">
                     <div>Idade:</div>
                     <div class="answer">18</div>
@@ -74,7 +75,7 @@
     </div>
 
     <div id="container-3">
-        <h1>Habilidades Profissionais</h1>
+        <h1 id="prof-skills">Habilidades Profissionais</h1>
         <div id="background">
             <div id="side-1">
                 <div id="container">
@@ -188,7 +189,9 @@
                     <div id="sub-title">Alura</div>
                 </div>
             </div>
-            <div id="blue-cube"></div>
+            <a href="https://cursos.alura.com.br/degree/certificate/d602ec01-1dc2-481b-b237-954416ece450" target="_blank">
+                <div id="blue-cube" class="certified"></div>
+            </a>
         </div>
         <div id="container">
             <div id="bar">
@@ -206,7 +209,9 @@
                     <div id="sub-title">Curso em Vídeo</div>
                 </div>
             </div>
-            <div id="blue-cube"></div>
+            <a href="https://www.cursoemvideo.com/validacao-de-certificado/?codigo=10B7E-685A-7" target="_blank">
+                <div id="blue-cube" class="certified"></div>
+            </a>
         </div>
     </div>
 </body>
