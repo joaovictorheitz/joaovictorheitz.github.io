@@ -3,7 +3,7 @@ let left_arrow = document.getElementById("right-arrow")
 let img = document.getElementById("picture-projeto")
 let title = document.getElementById("title-project")
 let paragraph = document.getElementById("paragraph-project")
-let projects = ["/assets/img/tcc/home.PNG","assets/img/tcc/tela-inicial.PNG","assets/img/tcc/estoque.PNG", "assets/img/cultour/home.png", "assets/img/cultour/explore.png", "assets/img/cultour/shop.png", "assets/img/cultour/avatar.png"]
+let projects = ["/assets/img/tcc/home.PNG","assets/img/tcc/tela-inicial.PNG","assets/img/tcc/estoque.PNG", "assets/img/cultour/home.PNG", "assets/img/cultour/explore.PNG", "assets/img/cultour/shop.PNG", "assets/img/cultour/avatar.PNG"]
 let count_clicks = 0
 
 function update() {
