@@ -22,3 +22,7 @@ contact_button.addEventListener("click", async function() {
     await delay(800)
     contact_h1.style.color = "black"
 })
+
+// if (screen.width <= 480) {
+//     contact_button.innerText = "Contatos"
+// }

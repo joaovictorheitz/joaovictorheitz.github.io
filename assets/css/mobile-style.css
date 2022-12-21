@@ -1,0 +1,176 @@
+@media only screen and (max-width: 480px) {
+  body header {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    visibility: hidden;
+  }
+  body header nav {
+    justify-content: space-between;
+  }
+  body header nav ul li {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  body #container {
+    display: flex;
+    align-items: center;
+  }
+  body #container #background {
+    height: 500px;
+    width: 100%;
+  }
+  body #container #background #info {
+    flex-direction: column;
+  }
+  body #container #background #info img {
+    height: 256px;
+    margin-bottom: 2rem;
+  }
+  body #container #background #info #info-text {
+    width: 100%;
+  }
+  body #container #background #info #info-text #basic-infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+  body #container #background #info #info-text #basic-infos h1 {
+    font-size: 1rem;
+  }
+  body #container #background #info #info-text #basic-infos h2 {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  body #container #background #info #info-text #buttons button {
+    font-size: 0.61rem;
+  }
+  body #container-2 #background {
+    flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body #container-2 #background #side-1 {
+    align-items: center;
+    width: 100%;
+  }
+  body #container-2 #background #side-1 h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  body #container-2 #background #side-1 p {
+    font-size: small;
+    margin: 2rem;
+    margin-bottom: 1rem;
+  }
+  body #container-2 #background #side-2 {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  body #container-2 #background #side-2 h1 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  body #container-2 #background #side-2 .row {
+    font-size: 0.7rem;
+    width: 80%;
+  }
+  body #container-3 {
+    margin-top: 3rem;
+  }
+  body #container-3 #background {
+    flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body #container-3 #background #side-1 {
+    justify-content: flex-start;
+    font-size: small;
+    width: 100%;
+  }
+  body #container-3 #background #side-1 #container {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #container-3 #background #side-1 #container .row-div .porcentage {
+    margin-left: 0.2rem;
+  }
+  body #container-3 #background #side-1 #container progress {
+    margin-left: 1rem;
+  }
+  body #container-3 #background #side-2 {
+    font-size: small;
+    width: 100%;
+  }
+  body #container-3 #background #side-2 #container {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #container-3 #background #side-2 #container .row-div .porcentage {
+    margin-left: 0.2rem;
+  }
+  body #container-3 #background #side-2 #container progress {
+    margin-left: 1rem;
+  }
+  body #container-4 #container {
+    height: 500px;
+  }
+  body #container-4 #container #mid {
+    align-items: center;
+  }
+  body #container-4 #container #mid img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body #container-4 #desc {
+    width: 100%;
+  }
+  body #container-4 #desc h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  body #container-4 #desc p {
+    text-align: justify;
+    font-size: 0.7rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+  }
+  body #container-5 #container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body #container-5 #container img {
+    height: 64px;
+    margin-left: 1rem;
+  }
+  body #container-5 #container h1 {
+    font-size: small;
+    margin: 2rem;
+  }
+  body #container-6 #container #bar {
+    font-size: 0.7rem;
+    width: 78%;
+  }
+  body #container-6 #container #bar #curso {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 1.5rem;
+  }
+  body #container-7 #container #bar {
+    width: 78%;
+  }
+}/*# sourceMappingURL=mobile-style.css.map */

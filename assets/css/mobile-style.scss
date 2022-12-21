@@ -1,0 +1,234 @@
+@media only screen and (max-width: 480px) {
+    
+    body {
+        
+
+        header {
+            width: fit-content;
+            margin: 0;
+            visibility: hidden;
+
+            nav {
+                justify-content: space-between;
+
+                ul {
+
+                    li {
+                        font-size: 0.6rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+
+            #background {
+                height: 500px;
+                width: 100%; 
+
+                #info {
+                    flex-direction: column;
+
+                    img {
+                        height: 256px;
+                        margin-bottom: 2rem;
+                    }
+                    
+                    #info-text {
+                        width: 100%;
+
+                        #basic-infos {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            margin-top: 0;
+
+                            h1 {
+                                font-size: 1rem;
+                            }
+
+                            h2 {
+                                font-size: 0.8rem;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        #buttons {
+                            button {
+                                font-size: 0.61rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #container-2 {
+            #background {
+                flex-direction: column;
+                height: max-content;
+
+
+                #side-1 {
+                    align-items: center;
+                    width: 100%;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-top: 3rem;
+                    }
+
+                    p {
+                        font-size: small;
+                        margin: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                #side-2 {
+                    align-items: center;
+                    width: 100%;
+                    margin-bottom: 2rem;
+
+                    h1 {
+                        font-size: 1rem;
+                        margin: 1rem;
+                    }
+
+                    .row {
+                        font-size: 0.7rem;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        #container-3 {
+            margin-top: 3rem;
+
+            #background {
+                flex-direction: column;
+                height: max-content;
+
+                #side-1 {
+                    justify-content: flex-start;
+                    font-size: small;
+                    width: 100%;
+
+                    #container {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .row-div {
+                            .porcentage {
+                                margin-left: 0.2rem;
+                            }
+                        }
+                        
+                        progress {
+                            margin-left: 1rem;
+                        }
+                    }
+
+                }
+
+                #side-2 {
+                    font-size: small;
+                    width: 100%;
+
+                    #container {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .row-div {
+                            .porcentage {
+                                margin-left: 0.2rem;
+                            }
+                        }
+                        
+                        progress {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #container-4 {
+            #container {
+                height: 500px;
+
+                #mid {
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        height: fit-content;
+                    }
+                }
+            }
+
+            #desc {
+                width: 100%;
+
+                h1 {
+                    font-size: 1.5em;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 0.7rem;
+                    height:  max-content;
+                    width: 100%;
+                }
+            }
+        }
+
+        #container-5 {
+            #container {
+                height: fit-content;
+
+                img {
+                    height: 64px;
+                    margin-left: 1rem;
+                }
+
+                h1 {
+                    font-size: small;
+                    margin: 2rem;
+                }
+            }
+        }
+
+        #container-6 {
+            #container {
+                #bar {
+                    font-size: 0.7rem;
+                    width: 78%;
+                    
+                    #curso {
+                        display: flex;
+                        height: 100%;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin: 0;
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        #container-7 {
+            #container {
+                #bar {
+                    width: 78%;
+                }
+            }
+        }
+    }
+}
