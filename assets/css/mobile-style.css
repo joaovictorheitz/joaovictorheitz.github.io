@@ -1,17 +1,14 @@
 @media only screen and (max-width: 480px) {
   body header {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0;
-    visibility: hidden;
+    width: 100%;
   }
   body header nav {
     justify-content: space-between;
+    margin: auto;
   }
   body header nav ul li {
-    font-size: 0.6rem;
-    margin: 0;
+    font-size: 0.7rem;
+    margin: 1rem;
   }
   body #container {
     display: flex;
@@ -132,6 +129,9 @@
   }
   body #container-4 #desc {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   body #container-4 #desc h1 {
     font-size: 1.5em;
@@ -143,7 +143,8 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    width: 100%;
+    width: 80%;
+    height: auto;
   }
   body #container-5 #container {
     height: -webkit-fit-content;
@@ -171,6 +172,15 @@
     margin-left: 1.5rem;
   }
   body #container-7 #container #bar {
+    font-size: 0.7rem;
     width: 78%;
+  }
+  body #container-7 #container #bar #curso {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 1.5rem;
   }
 }/*# sourceMappingURL=mobile-style.css.map */
