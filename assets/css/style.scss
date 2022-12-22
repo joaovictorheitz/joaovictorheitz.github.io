@@ -244,10 +244,13 @@ body {
                 .row {
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
 
                     .answer {
                         width: 100%;
-                        text-align: center;
+                        text-align: right;
+                        margin-right: 5rem;
                     }
                 }
             }

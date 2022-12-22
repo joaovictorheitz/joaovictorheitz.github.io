@@ -100,7 +100,11 @@
 
                     .row {
                         font-size: 0.7rem;
-                        width: 80%;
+                        margin-left: 3rem;
+
+                        .answer {
+                            margin-right: 3rem;
+                        }
                     }
                 }
             }

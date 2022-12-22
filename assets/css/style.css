@@ -169,10 +169,13 @@ body #container-2 #background #side-2 h1 {
 body #container-2 #background #side-2 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 body #container-2 #background #side-2 .row .answer {
   width: 100%;
-  text-align: center;
+  text-align: right;
+  margin-right: 5rem;
 }
 body #container-3 {
   display: flex;

@@ -75,7 +75,10 @@
   }
   body #container-2 #background #side-2 .row {
     font-size: 0.7rem;
-    width: 80%;
+    margin-left: 3rem;
+  }
+  body #container-2 #background #side-2 .row .answer {
+    margin-right: 3rem;
   }
   body #container-3 {
     margin-top: 3rem;
